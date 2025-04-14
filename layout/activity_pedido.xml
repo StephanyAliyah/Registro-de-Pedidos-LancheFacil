@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,41 +8,114 @@
     android:layout_height="match_parent"
     android:padding="24dp"
     android:background="@color/appColor1"
-    tools:context=".MainActivity">
+    tools:context=".PedidoActivity">
 
-    <!-- Logo -->
+        <!-- Imagem do cardápio -->
+        <ImageView
+            android:id="@+id/imageCardapio"
+            android:layout_width="216dp"
+            android:layout_height="148dp"
+            android:src="@drawable/cardapio_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageLogo"
-        android:layout_width="304dp"
-        android:layout_height="271dp"
-        android:src="@drawable/logo_lanchefacil"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        <!-- Campo de texto para o nome -->
 
-    <!-- Botão Iniciar -->
+        <EditText
+            android:id="@+id/editTextNome"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:hint="Digite seu nome"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageCardapio" />
 
-    <Button
-        android:id="@+id/btnIniciar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@color/appColor3"
-        android:fontFamily="monospace"
-        android:onClick="iniciarPedido"
-        android:text="@string/appT1BtnSet"
-        android:textColor="@color/appColor1"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        <!-- Texto: Escolha do pedido -->
+        <TextView
+            android:id="@+id/textPedidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appT2Pedido"
+            android:textColor="@color/appColor4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/editTextNome"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- CheckBox: X-Burguer -->
+        <CheckBox
+            android:id="@+id/cbXBurguer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X-Burguer"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/textPedidos"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- CheckBox: X-Salada -->
+        <CheckBox
+            android:id="@+id/cbXSalada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X-Salada"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/cbXBurguer"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- CheckBox: X-Bacon -->
+        <CheckBox
+            android:id="@+id/cbXBacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X-Bacon"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/cbXSalada"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- CheckBox: Cheese Burger -->
+        <CheckBox
+            android:id="@+id/cbCheeseBurger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheese Burguer"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/cbXBacon"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- CheckBox: Sanduíche Vegetariano -->
+        <CheckBox
+            android:id="@+id/cbVegetariano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanduíche Vegetariano"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/cbCheeseBurger"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Botão Confirmar Pedido -->
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/appColor3"
+            android:fontFamily="monospace"
+            android:onClick="confirmarPedido"
+            android:text="@string/appT2BtnConfirmar"
+            android:textColor="@color/appColor1"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbVegetariano"
+            app:layout_constraintVertical_bias="0.136" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
