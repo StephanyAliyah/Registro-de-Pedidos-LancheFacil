@@ -5,9 +5,9 @@
 O **Lanche Fácil** é um aplicativo Android que simula o processo de realização de pedidos em uma lanchonete. O cliente insere seu nome, seleciona um ou mais lanches e, ao finalizar, visualiza um resumo com seu pedido. O app foi desenvolvido com foco em **simplicidade, clareza e navegação fluida** entre telas.
 
 ### ✅ Principais Funcionalidades:
-- Tela inicial (MainActivity) com a **logomarca da lanchonete**;
-- Formulário de pedido (PedidoActivity) com **EditText** para nome e **CheckBoxes** para seleção dos lanches;
-- Tela de **resumo dinâmico**(ResumoActivity), exibindo o nome e o lanche escolhido.
+- **Tela 1:** Início (MainActivity) com a **logomarca da lanchonete**;
+- **Tela 2:** Formulário de pedido (PedidoActivity) com **EditText** para nome e **CheckBoxes** para seleção dos lanches;
+- **Tela 3:** Tela de **resumo dinâmico**(ResumoActivity), exibindo o nome e o lanche escolhido.
 
 ---
 
