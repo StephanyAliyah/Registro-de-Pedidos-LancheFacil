@@ -1,43 +1,54 @@
-# App de Registro de Pedidos - Lanche Fácil
 
-## Descrição do Projeto:
-Aplicativo que simula o processo de pedido em uma lanchonete. O cliente escolhe o lanche, digita o nome e visualiza um resumo do pedido.
+# 🍔 App de Registro de Pedidos - Lanche Fácil
 
-### **Principais Funcionalidades:**
-- Tela inicial com logomarca;
-- Tela de pedido com CheckBoxes e campo de nome;
-- Resumo do pedido com nome e lanche.
+## 📌 Descrição do Projeto:
+O **Lanche Fácil** é um aplicativo Android que simula o processo de realização de pedidos em uma lanchonete. O cliente insere seu nome, seleciona um ou mais lanches e, ao finalizar, visualiza um resumo com seu pedido. O app foi desenvolvido com foco em **simplicidade, clareza e navegação fluida** entre telas.
 
-## Informações do Desenvolvedor
+### ✅ Principais Funcionalidades:
+- Tela inicial (MainActivity) com a **logomarca da lanchonete**;
+- Formulário de pedido (PedidoActivity) com **EditText** para nome e **CheckBoxes** para seleção dos lanches;
+- Tela de **resumo dinâmico**(ResumoActivity), exibindo o nome e o lanche escolhido.
+
+---
+
+## 👩‍💻 Informações da Desenvolvedora
 **Nome:** Stephany Aliyah Guimarães Eurípedes de Paula  
-**Curso:** Ciência da Computação - 3° Semestre
+**Curso:** Ciência da Computação - 3° Semestre  
 
-## Processo de Desenvolvimento
-Esse app utilizou elementos fundamentais do Android, como EditText, Button, CheckBox e TextView, para construir uma experiência completa de registro de pedido. A interface foi projetada para ser intuitiva, permitindo que o usuário inserisse seu nome, selecionasse o tipo de lanche desejado e confirmasse a escolha de forma simples. O projeto reforçou a importância da interação entre os componentes visuais e a lógica de programação para garantir uma navegação fluida e funcional dentro do app.
+---
 
+## 🛠️ Processo de Desenvolvimento
+O aplicativo foi construído com base em componentes visuais fundamentais do Android, como `EditText`, `Button`, `CheckBox` e `TextView`. As três telas foram conectadas por **Intents**, possibilitando a passagem de informações entre Activities. O layout foi cuidadosamente estruturado com imagens ilustrativas e campos interativos para proporcionar uma experiência realista e agradável ao usuário.
 
-### **Desafios Superados:**
-- Envio de nome e lanche entre Activities;
-- Exibição dinâmica do conteúdo.
+### 🚧 Desafios Superados:
+- Implementação da **passagem de dados entre Activities**;
+- Exibição personalizada do resumo com base nas escolhas feitas.
 
-### **Decisões Estratégicas:**
-- Utilização de imagens decorativas nas três telas;
-- Layout responsivo com visual amigável.
+### 💡 Decisões Estratégicas:
+- Uso de **imagens decorativas** em todas as telas para tornar o app mais atrativo;
+- Organização clara dos componentes para facilitar a usabilidade.
 
-## Como Executar o Aplicativo
-1. **Baixar o APK**: [Download do APK](./lanchefacilg.apk)  Ou ir na pasta src/LancheFacil.zip.
-2. Transferir o arquivo para um dispositivo Android.
-3. Instalar e abrir o aplicativo.
-4. Inserir os dados solicitados (altura e peso) e obter o resultado do IMC.
+---
 
-## Estrutura do Repositório
+## ▶️ Como Executar o Aplicativo
+1. **Baixar o APK**: [Download do APK] ou acessar `src/LancheFacil.zip`;
+2. Transferir o arquivo para um dispositivo Android;
+3. Instalar e abrir o aplicativo;
+4. Inserir o nome, selecionar os lanches desejados e visualizar o resumo final.
+
+---
+
+## 📁 Estrutura do Repositório
 ```
-LancheFacil/
-├── lanchefacil.apk    # Arquivo compilado do aplicativo
-├── lanchefacil.zip      # Código-fonte do projeto(pasta src/lanchefacil.zip)
-├── README.md        # Documentação do projeto
+src/LancheFacil.apk/zip
+├── lanchefacil.apk        # Arquivo compilado do aplicativo
+├── lanchefacil.zip        # Código-fonte do projeto (pasta src/LancheFacil.zip)
+├── README.md              # Documentação do projeto
 ```
 
-## Tecnologias Utilizadas
-- **Java** para a lógica de programação (linguagem utilizada);
-- **Android Studio** como ambiente de desenvolvimento;
+---
+
+## 🧰 Tecnologias Utilizadas
+- **Java** (lógica de programação)
+- **Android Studio** (ambiente de desenvolvimento))
+- **Componentes utilizados**: CheckBox, TextView, EditText, Button,  Intent, ImageView
