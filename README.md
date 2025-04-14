@@ -35,6 +35,9 @@ O aplicativo foi construído com base em componentes visuais fundamentais do And
 2. Transferir o arquivo para um dispositivo Android;
 3. Instalar e abrir o aplicativo;
 4. Inserir o nome, selecionar os lanches desejados e visualizar o resumo final.
+   
+## 📸  **Imagens do Projeto**  
+Todas as imagens utilizadas estão disponíveis na pasta `/images`.
 
 ---
 
