@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this); // Visual moderno
         setContentView(R.layout.activity_main); // Garante que está usando o layout correto
 
-        // Aplica padding para barra de status se o ID estiver certo no XML
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
